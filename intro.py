@@ -1,0 +1,1 @@
+print('hey this is ram\'s'+' selvesan\n'*10)
