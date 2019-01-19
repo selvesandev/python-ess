@@ -139,18 +139,89 @@ Unordered mapping of objects Key:Value pairs
 }
 ```
 They cannot be sorted.
+```
+myDict = {
+    'fruit': 'Apple',
+    'price': 20.22,
+    'market': {
+        'loc1': 'Kalanki',
+        'loc2': 'Kalimati'
+    },
+    'delivery': [1, 2, 3, 4]
+}
 
+print(myDict['fruit'])
+print(myDict['delivery'][0])
+print(myDict['market']['loc1'])
+```
+
+* Add item to a dictionary `myDict['newKey']='New Value'`
+* `d.keys()` returns array of keys.
+* `d.values()` returns array of values.
+* `d.items()` returns tuples i.e `[('key','value'),('key2','value2')]`
 
 #### Tuples (tup)
-Ordered immutable sequence of object (10,'hello',200.3)
+Ordered immutable sequence of object (10,'hello',200.3)  
+Very similar to lists one different property is that they have immutability that means they cannot be mutated or changed.
+
+* Once an element is inside a tuple, it cannot be reassigned.
+* Use small brackets instead of curly while constructing tuples.
+```
+    myTup = (1, 'james', 3)
+    print(type(myTub))
+    print(len(myTup))
+    print(myTup[1])
+
+```
+* Slicing and indexing can also be done just like lists.
+
+* How many times a values occurs in tuple
+```
+t = ('a', 'a', 'b')
+print(t.count('a'))
+```
+* `t.index('a')` get the index of `'a'`
+
+* **immutability**
+```
+INVALID (TYPE ERROR)
+
+myTuple = ('hey', 'ram', '20')
+myTuple[0] = 'check'
+```
 
 
 #### Sets (set)
-Unordered collection of unique objects {"a":"b"}
+Unordered collection of unique elements. There can be only 
+one representatives of the same object.
+```
+mySet = set()
+mySet.add(1)
+mySet.add('hello')
+mySet.add('hello') # won't repeat it can't add hello again
+
+print(mySet) #{1, 'hello'}
+```
+* Convert list to set to remove duplicate value.
+```
+myList = [1, 2, 2, 3, 4, 5, 1, 1, 1, 3, 4, 5]
+print(set(myList)) # {1, 2, 3, 4, 5} 
+```
+* Sets don't have order.
+
 
 
 #### Booleans (bool)
 Logical Value indicating `TRUE` or `FALSE`
 
+* Important when dealing with control flow and logic!.
+* Case Sensitive `True` and `False` `type(True) > bool`
+
+* `1>2` > `False`
+
 
 #### None
+
+```
+a=None (None datatype just a placeholder for a) equals to null.
+```
