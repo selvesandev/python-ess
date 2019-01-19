@@ -104,10 +104,41 @@ print(f'Hello my name is {name}. I am {age} years old')
 
 
 #### Lists (list)
-Ordered sequence of objects [10,'hello',200]
+Ordered sequence of objects [10,'hello',200] that can hold a variety of object types.
+* They use [] brackets and commas to separate object types.
+* List support indexing and slicing just as string.
+```
+myList = [1, 2, 3]
+
+myList2 = ['string', 100, 22.3]
+
+```
+* Use len() function to get the size of length.
+* Use `myList[0]` to get the value from the list.
+* You can add lists
+```
+print(myList2 + myList) // ['string', 100, 22.3, 1, 2, 3]
+
+```
+* Lists value can be overriden `myList[0]='newvalue'`
+* Add value to the end of the list by `myList.append(6)` 
+* Get and remove the last value from the list `myList.pop()`
+* Pass the index position of the list to remove the value at desired position `myList.pop(2)`
+* Order List by `myList.sort()` won't return anything.
+* `myList.reverse()` for reverse sort.
+* Just like in string we can perform indexing and slicing in the list `mylist[:2]`
+
+
 
 #### Dictionaries (dict)
-Unordered Key:Value pairs {"myKey":"value","name":"Frankie"}
+Unordered mapping of objects Key:Value pairs 
+```
+{
+    "myKey":"value",
+    "name":"Frankie"
+}
+```
+They cannot be sorted.
 
 
 #### Tuples (tup)
@@ -120,3 +151,6 @@ Unordered collection of unique objects {"a":"b"}
 
 #### Booleans (bool)
 Logical Value indicating `TRUE` or `FALSE`
+
+
+#### None
