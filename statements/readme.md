@@ -211,7 +211,6 @@ myList = [1, 2, 3, 4, 5, 6, 7]
 shuffle(myList) # Suffle in a inplace function show the variable value will permanently change.
 print(myList)
 
-
 print(randint(0, 100)) # Random Number
 ```
 
@@ -219,5 +218,72 @@ print(randint(0, 100)) # Random Number
 ```
 myNum = int(input('Enter a number here.'))
 print(myNum) # IS ALWAYS A STRING
+
+```
+
+
+
+### List Comprehension
+List comprehension are a unique way of quickly creating a list with python.
+
+* If you are using a for loop along with `.append()` to create a list, then this would be a good alternative!
+
+```
+myStr = 'Hello'
+myList = []
+
+for letter in myStr:
+    myList.append(letter)
+
+print(myList)
+
+```
+* The above can be also done as.
+```
+
+myListCom = [letter for letter in myStr]
+print(myListCom)
+
+
+
+myNewList = [num ** 2 for num in range(0, 10)]  # Square root of every number in a range
+print(myNewList)
+
+```
+* More Advanced (also add a if statement)
+
+```
+myNewList = [x for x in range(0, 11) if x % 2 == 0]
+print(myNewList)
+```
+
+* Perform calculations.
+```
+celcius = [0, 10, 20, 35.43]
+fahrenheit = [(9 / 5) * temp + 32 for temp in celcius]
+print(fahrenheit)
+```
+
+* Take it easy examples (think twice before implementing these types of one liner) **IF ELSE** and **NESTED LOOPS**
+```
+results = [x if x % 2 == 0 else 'ODD' for x in range(0, 11)]
+print(results)
+```
+
+```
+myList = []
+for x in [2, 4, 6]:
+    for y in [1, 10, 20]:
+        myList.append(x * y)
+
+print(myList)
+
+The above can be done as.
+--------------------------
+
+
+myList = [x * y for x in [2, 4, 6] for y in [1, 10, 100]]
+print(myList)
+
 
 ```
