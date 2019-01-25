@@ -11,7 +11,6 @@ can use `Error Handling` to let the script continue with other code, even if the
 
 **finally** A Final block of code executed whether or not there is a error.
 ```
-
 #This will generate a TypeError
 
 def my_func(a, b):
@@ -20,7 +19,6 @@ def my_func(a, b):
 
 my_func(2, '2')
 print('Check') # This line is never going to execute
-
 ```
 
 **With Exception Handling**
