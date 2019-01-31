@@ -118,7 +118,60 @@ s1 = {1, 2, 3}
 s2 = {1, 2, 4}
 s1.update(s2)
 print(s1)  # {1,2,3,4}
+```
 
+### Dictionaries.
+```
+d = {
+    'k1': 1,
+    'k2': 2
+}
+
+xd = {x: x ** 2 for x in range(10)}
+print(xd)
+
+------
+
+nxd = {k: v ** 2 for k, v in zip(['a', 'b', 'c'], range(3))}
+print(nxd)
 
 ```
 
+### Lists.
+```
+l = [1, 2, 3, 4, 5, 6, 7]
+l.append(6) # append item to your list at last.
+
+l.count() # count how many times a object occur in list
+l.count(1) # what occurs how many times.
+
+-----
+l = [1, 2, 3, 4, 5, 6, 7]
+l.append([2, 3]) # [1, 2, 3, 4, 5, 6, 7, [2, 3]]
+
+l.extend([2, 3]) # [1, 2, 3, 4, 5, 6, 7, 2, 3]
+# extend expects a iterable object.
+
+
+
+l.index(2) # would return the index of whatever value is passed in it.
+# will get error if the item is not in the list.
+
+
+l.insert(2,'inserted') # put the object in the index supplied. takes two argument.
+# inserted at 2 index 3rd place.
+
+l.pop() # pop the last element and returns it and changes permanentry
+
+l.pop(index) # pops from the given index
+
+l.remove() # removes the first occurance of the value.
+# removes only the first instance.
+
+l.reverse() # reverse the list permanently
+
+l.sort() # sorts the list.
+
+
+
+```
