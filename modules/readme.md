@@ -132,3 +132,53 @@ print(result2)
 This opens a interacting debugger tool in the terminal of jetbrains where you can input to see your values.
 
 ## timeit.
+
+
+
+## Regular Expression.
+```
+import re
+
+patterns = ['term1', 'term2']
+
+text = 'this is a string with term1'
+
+search = re.search('x', text)
+if (search):
+    print('match was found')
+```
+
+* If pattern is found a \<Match> object is returned else a `None` is returned.
+```
+re.search('x','y') # None
+``` 
+
+* The `match object` has further more methods like
+```
+
+print(search.start()) # 22
+print(search.end()) # 27
+```
+
+* `re.split()` methods lets you split the string by regex.
+```
+    re.split('x','axe')
+```
+ 
+* `re.findall('x','a b x x y')` to find how many matches are there returns `list`.
+
+## StringIO
+Implements an in memory file like object. This object can then be used as input or output to most functions that would expect a standard file object.
+```
+import StringIO
+
+message = 'This is just a normal string.'
+f=StringIO.StringIO(message)
+
+Now we have the object which we can treat just like a file.
+
+f.read()
+f.write()
+f.seek() etc.
+```
+
