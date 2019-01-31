@@ -172,6 +172,4 @@ l.reverse() # reverse the list permanently
 
 l.sort() # sorts the list.
 
-
-
 ```
